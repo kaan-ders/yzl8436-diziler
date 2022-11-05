@@ -1,4 +1,6 @@
-﻿namespace Diziler
+﻿using System.Collections;
+
+namespace Diziler
 {
     internal class Program
     {
@@ -93,18 +95,72 @@
             "Maça|1"
             "Maça|2"*/
 
-            string[] deste = new string[52];
-            string[] kagit = { "Kupa", "Karo", "Maça", "Sinek" };
+            //string[] deste = new string[52];
+            //string[] kagit = { "Kupa", "Karo", "Maça", "Sinek" };
 
-            for (int i = 0; i < kagit.Length; i++)
-            {
-                for (int j = 0; j < 13; j++)
-                {
-                    deste[i * j] = kagit[i] + "|" + (j + 1);
-                }
-            }
+            //for (int i = 0; i < kagit.Length; i++)
+            //{
+            //    for (int j = 0; j < 13; j++)
+            //    {
+            //        deste[i * j] = kagit[i] + "|" + (j + 1);
+            //    }
+            //}
 
+            //foreach
+            //------------------------------------------
 
+            //string[] ogrenciler = { "Ali", "Veli", "Ayşe", "Fatma" };
+
+            //for ile
+
+            //for (int i = 0; i < ogrenciler.Length; i++)
+            //{
+            //    Console.WriteLine(ogrenciler[i]);
+            //}
+
+            //foreach ile
+            //foreach (string item in ogrenciler)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //ArrayList
+
+            //ogrenciler.Reverse();
+            //Array.Sort(ogrenciler);
+
+            //Array.IndexOf(ogrenciler, "Ayşe");
+
+            //string isim = "ahmet";
+            //isim.IndexOf('e');
+
+            //string[] oyuncular = { "Oyuncu1|20", "Oyuncu2|2" };
+
+            //oyuncular[1].IndexOf("|")
+            //Array.
+
+            //int asd = 32;
+
+            //decimal asd2 = 32131;
+            //DateTime dateTime = DateTime.Now;
+
+            //ArrayList liste = new ArrayList();
+            //liste.Add(12);
+            //liste.Add("Merhaba");
+            //liste.Add(DateTime.Now);
+            ////liste.Add(null);
+            //liste.Add(true);
+
+            //foreach (var item in liste)
+            //{
+            //    Console.WriteLine(item + " " + item.GetType());
+
+            //    //if(item.GetType() == typeof(int))
+            //    //{
+            //    //    Console.WriteLine(Convert.ToInt32(item) + 10);
+            //    //}
+            //}
+            
 
             Console.ReadLine();
         }
