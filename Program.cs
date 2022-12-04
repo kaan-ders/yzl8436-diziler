@@ -160,9 +160,65 @@ namespace Diziler
             //    //    Console.WriteLine(Convert.ToInt32(item) + 10);
             //    //}
             //}
-            
 
+            //Listler
+            //------------------------------------------------
+
+            string[] dizi = new string[10];
+            ArrayList arrayList = new ArrayList();
+
+            List<string> list = new List<string>();
+
+            list.Add("ahmet");
+            //list.Add(3);
+
+            var list2 = new List<int>();
+            list2.Add(4);
+            //list2.Add("ahmet");
+
+            //hashtable
+            Dictionary<string, Siparis> siparisler = new Dictionary<string, Siparis>();
+            siparisler.Add("123", new Siparis
+            {
+                Adet = 100,
+                Musteri = "Ayşe",
+                TeslimatAdresi = "Ankara/Çankaya",
+                Tutar = 1200,
+                UrunAdi = "Kalem"
+            });
+
+            siparisler.Add("AA5567", new Siparis
+            {
+                Adet = 3,
+                Musteri = "Ahmet",
+                TeslimatAdresi = "İstanbul/Eminönü",
+                Tutar = 300,
+                UrunAdi = "Silgi"
+            });
+
+            siparisler.Add("CK889", new Siparis
+            {
+                Adet = 267,
+                Musteri = "Fatma",
+                TeslimatAdresi = "Konya/Ereğli",
+                Tutar = 748947,
+                UrunAdi = "Yazı Tahtası"
+            });
+
+            //Console.WriteLine(siparisler["1231231231"]);
+
+            Console.WriteLine(siparisler["123"].Adet);
             Console.ReadLine();
         }
+    }
+
+    public class Siparis
+    {
+        public string Musteri { get; set; }
+        public string TeslimatAdresi { get; set; }
+
+        public string UrunAdi { get; set; }
+        public int Adet { get; set; }
+        public decimal Tutar { get; set; }
     }
 }
